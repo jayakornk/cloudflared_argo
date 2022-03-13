@@ -12,6 +12,7 @@ RUN \
     ARCH="${TARGETARCH}" \
     && if [[ "${TARGETARCH}" = "arm64" ]]; then ARCH="arm64"; fi \
     && if [[ "${TARGETARCH}" = "amd64" ]]; then ARCH="amd64"; fi \
+    && if [[ "${TARGETARCH}" = "ppc64le" ]]; then ARCH="amd64"; fi \
     && if [[ "${TARGETARCH}" = "arm" ]]; then ARCH="arm"; fi \
     && if [[ "${TARGETARCH}" = "386" ]]; then ARCH="386"; fi \
     && apk add --no-cache libc6-compat yq \
