@@ -16,8 +16,8 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  DOCKERHUB_SLUG: ${{ github.actor }}/${{ github.repository }}
-  GHCR_SLUG: ghcr.io/${{ github.actor }}/${{ github.repository }}
+  DOCKERHUB_SLUG: jayakornk/cloudflared_argo
+  GHCR_SLUG: ghcr.io/jayakornk/cloudflared_argo
 
 jobs:
   build-and-push-image:
